@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bd {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 350px;
+            height: 90px;
+            border: 1px solid rgb(175, 175, 175);
+            background:
+                linear-gradient(90deg, rgba(255, 255, 255, 0) 96%, rgb(34, 34, 34) 96%) repeat-x top right/ 4% 12%,
+                linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.212) 50%, rgba(255, 255, 255, 0) 90%),
+                linear-gradient(90deg, white 45%, black 45%, black 55%, rgb(255, 255, 192) 55%);
+        }
+
+        .bd::after {
+            content: "";
+            width: 440px;
+            height: 60px;
+            border: 1px solid rgb(175, 175, 175);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            border-radius: 5px;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.212) 50%, rgba(255, 255, 255) 90%),
+                rgb(255, 255, 255);
+        }
+
+        .bd::before {
+            content: "Made in Taiwan";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            font: 0.8em "Fira Sans", sans-serif;
+            color: rgb(115, 115, 116);
+        }
+
+        .in {
+            width: 40px;
+            height: 80px;
+            border: 1px solid rgb(175, 175, 175);
+            border-radius: 5px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-250px, -50%);
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0.212) 50%, rgba(255, 255, 255) 90%),
+                rgb(255, 255, 255);
+        }
+
+        .in::after {
+            content: "";
+            width: 80px;
+            height: 1px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(450px, -50%);
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bd">
+        <div class="in"></div>
+    </div>
+</body>
+
+</html>

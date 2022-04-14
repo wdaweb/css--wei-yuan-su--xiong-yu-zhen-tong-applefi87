@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .body::before {
+            content: "";
+            width: 80px;
+            height: 60px;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .body::after {
+            content: "";
+            width: 40px;
+            height: 20px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            left: 0;
+            top: 20px;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .nose {
+            width: 20px;
+            height: 15px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 30px;
+            margin: auto;
+        }
+
+        .nose::before {
+            display:inline-block;
+            content: "V";
+            width: 60px;
+            height: 90px;
+            color: white;
+            font: bold 2em  sans-serif  ;
+            transform: scale(5, 1) translate(16px,70px);
+        }
+
+        .blush {
+            width: 50px;
+            height: 50px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            transform: translate(-80px, -10px);
+        }
+
+        .blush::after {
+            content: "";
+            width: 50px;
+            height: 50px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(160px, 0);
+        }
+
+        .ears {
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(white 50%, black 50%);
+            border-radius: 50%;
+            position: absolute;
+            left: 35%;
+            top: 30%;
+        }
+
+        .ears::after {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(white 50%, black 50%);
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            transform: translate(350%, 0);
+        }
+
+        .eye {
+            width: 45px;
+            height: 45px;
+            background: radial-gradient(black 50%, white 50%);
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            transform: translate(-35px, -50px);
+        }
+
+        .eye::after {
+            content: "";
+            width: 45px;
+            height: 45px;
+            background: radial-gradient(black 50%, white 50%);
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(70px, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body"></div>
+    <div class="nose"></div>
+    <div class="blush"></div>
+    <div class="ears"></div>
+    <div class="eye"></div>
+</body>
+
+</html>
